@@ -1,0 +1,1 @@
+Get-ChildItem -Recurse | ForEach-Object { "https://raw.githubusercontent.com/FlireobvGroup/Alieke/main/Assets/Creatives/$($_.FullName.Substring((Get-Location).Path.Length + 1).Replace('\', '/'))" }
